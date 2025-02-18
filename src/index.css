@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+textarea::-webkit-scrollbar{
+  width: 10px;
+  resize: none;
+}
+*::-webkit-scrollbar{
+  width: 0px;
+}
+textarea::placeholder{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  font-size: 32px;
+}
+@media (max-width:768px){
+  textarea::placeholder{
+    font-size:21px;
+  }
+}
+@media (max-height:668px){
+  textarea{
+    height: 80%;
+  }
+}
